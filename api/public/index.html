@@ -3,11 +3,35 @@
 <head>
   <title>Express</title>
   <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="/stylesheets/bootstrap.css">
 </head>
 
 <body>
-  <h1>Express</h1>
-  <p>Welcome to Express</p>
+  <div class="d-flex justify-content-center">
+    <nav class="navbar navbar-light bg-light border rounded p-auto">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="/images/dico.png" alt="" width="30" height="30" class="d-inline-block align-text-top">
+          <strong class="">Mon Dictionnaire</strong>
+        </a>
+        <form class="d-flex mt-3">
+          <input class="form-control me-2 w-75" id="saisie" type="search" placeholder="Rechercher" aria-label="Search">
+          <select class="form-select me-2 w-25" id="langue" aria-label="Default select example">
+            <option value="fr">fr</option>
+            <option value="en">en</option>
+            <option value="it">it</option>
+          </select>
+          <button class="btn btn-outline-success" id="bouton" type="submit">Rechercher</button>
+        </form>
+      </div>
+    </nav>
+  </div>
+
+  <div class="mt-4 p-3 container bg-light border rounded" id="def">
+
+  </div>
+
+  <script src="/javascripts/main.js"></script>
 </body>
 
 </html>
