@@ -7,7 +7,7 @@ function definition(l, m) {
         .then(response => response.json())
         .then((results) => {
             console.log(results);
-            document.getElementById('def').innerHTML += `
+            document.getElementById('def').innerHTML = `
                 <h1>${results[0].word}</h1>
             `
         })
