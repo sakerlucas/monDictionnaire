@@ -10,8 +10,7 @@ window.onload = () => {
         fetch(`https://api.dictionaryapi.dev/api/v2/entries/${langue}/${mot}`)
         .then(response => response.json())
         .then((results) => {
-            console.log(results);
-
+            
             document.getElementById('def').innerHTML = `
                 <h1>${results[0].word}</h1>
             `
