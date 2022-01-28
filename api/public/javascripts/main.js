@@ -39,4 +39,11 @@ window.onload = () => {
         })
         .catch(err => console.log(err))
     })
+
+    document.getElementById('boutonDelete').addEventListener('click', (evt) => {
+        document.getElementById('def').innerHTML = `
+            <h6>Faites une recherche...</h6>
+        `
+        document.getElementById('saisie').value = ""
+    })
 }
