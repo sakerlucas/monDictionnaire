@@ -5,7 +5,7 @@ window.onload = () => {
         evt.preventDefault()
         console.log('Recherche');
         document.getElementById('def').innerHTML = `
-            <div class="loader m-auto mt-3" id="loader">
+            <div class="loader m-auto" id="loader">
             </div>
         `
         mot = document.getElementById('saisie').value
