@@ -41,6 +41,7 @@ window.onload = () => {
     })
 
     document.getElementById('boutonDelete').addEventListener('click', (evt) => {
+        evt.preventDefault()
         document.getElementById('def').innerHTML = `
             <h6>Faites une recherche...</h6>
         `
