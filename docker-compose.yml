@@ -1,0 +1,9 @@
+services:
+  dictionnaire:
+    image: node:lts
+    working_dir: /usr/src/app
+    volumes:
+      - ./api:/usr/src/app
+    ports:
+      - 3333:3000
+    command: npm start
